@@ -7,10 +7,7 @@ public class Browsercommands {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		  String projectpath=System.getProperty("user.dir");
-		  System.out.println(projectpath);
-		  String driverpath=projectpath + "//driver//chromedriver.exe";
-		  System.setProperty("webdriver.chrome.driver", driverpath);
+		  
 		 
 		  
 		  WebDriver driver=new ChromeDriver();
