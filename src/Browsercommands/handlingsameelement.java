@@ -1,4 +1,6 @@
-/*package Browsercommands;
+package Browsercommands;
+
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -13,10 +15,12 @@ public class handlingsameelement {
 	   
 		WebDriver driver=new FirefoxDriver();
 		driver.get("https://www.infibeam.com/Login.action?redirectURL=https%3A%2F%2Fwww.infibeam.com%2F");
-		WebElement a = driver.findElement(By.xpath(".//*[@id='new-account-btn']"));
-		a.click();
+		driver.findElement(By.xpath(".//*[@id='new-account-btn']")).click();
 		
-		driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys("1234");
+		List<WebElement> list= driver.findElements(By.xpath(".//*[@id='password']"));
+		list.get(0).sendKeys("sarika"); //to enter the element in the first password edit box
+		list.get(1).sendKeys("sarika");  //to enter the element in the second password edit box
+		
 		 }
-	}*/
+	}
 

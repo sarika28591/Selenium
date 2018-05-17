@@ -4,11 +4,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class handlinglinks {
 
 	public static void main(String[] args) {
 		 WebDriver driver=new ChromeDriver();
+		  //WebDriver driver=new InternetExplorerDriver();
 		  driver.get("https://www.google.com");
 		  
 		 /* System.out.println(driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[1]/div/div/div/div[1]/div[1]/a")).isEnabled());
